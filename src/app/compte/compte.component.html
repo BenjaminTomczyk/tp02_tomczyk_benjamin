@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>NFE114</title>
+
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required [(ngModel)]="nom">
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required [(ngModel)]="prenom">
+        </div>
+        <div>
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required [(ngModel)]="adresse">
+        </div>
+        <div>
+            <label for="cp">Code Postal :</label>
+            <input type="number" id="cp" name="cp" required [(ngModel)]="cp">
+        </div>
+        <div>
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville" required [(ngModel)]="ville">
+        </div>
+        <div>
+            <label for="pays">Pays :</label>
+            <input type="text" id="pays" name="pays" required [(ngModel)]="pays">
+        </div>
+        <div>
+            <label for="tel">Tél. :</label>
+            <input type="tel" id="tel" name="tel" required pattern="[0-9]{10}" [(ngModel)]="tel">
+        </div>
+        <div>
+            <label for="mail">e-mail :</label>
+            <input type="email" id="mail" name="mail" required [(ngModel)]="mail">
+        </div>
+        <div>
+            <label for="civilite">Civilité :</label>
+            <select name="civilite" id="civilite" required [(ngModel)]="civilite">
+                <option value="">--Choisir une option--</option>
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        <div>
+            <label for="login">Login :</label>
+            <input type="text" id="login" name="login" required [(ngModel)]="login">
+        </div>
+        <div>
+            <label for="pwd">Mot de passe :</label>
+            <input type="password" id="pwd" name="pwd" required [(ngModel)]="pwd">
+        </div>
+        <div>
+            <button (click) = "onClick()">Envoyer</button>
+        </div>
+    </form>
+</body>
+</html>
